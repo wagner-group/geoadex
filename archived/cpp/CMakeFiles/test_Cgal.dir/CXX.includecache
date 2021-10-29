@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/research/space-partition-adv/test_Cgal.cpp
+CGAL/config.h
+-
+iostream
+-
+CGAL/Epick_d.h
+-
+CGAL/Delaunay_triangulation.h
+-
+

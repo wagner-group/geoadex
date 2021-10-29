@@ -1,0 +1,3 @@
+/home/research/space-partition-adv/CMakeFiles/edit_cache.dir
+/home/research/space-partition-adv/CMakeFiles/rebuild_cache.dir
+/home/research/space-partition-adv/CMakeFiles/test_Cgal.dir
