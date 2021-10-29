@@ -1,5 +1,7 @@
 # Adversarial Examples for k-Nearest Neighbor Classifiers Based on Higher-Order Voronoi Diagrams
 
+Published in NeurIPS 2021 [[arXiv]](https://arxiv.org/abs/2011.09719)
+
 ## Abstract
 
 Adversarial examples are a widely studied phenomenon in machine learning models. While most of the attention has been focused on neural networks, other practical models also suffer from this issue. In this work, we propose an algorithm for evaluating the adversarial robustness of $k$-nearest neighbor classification, i.e., finding a minimum-norm adversarial example. Diverging from previous proposals, we propose the first geometric approach by performing a search that expands outwards from a given input point. On a high level, the search radius expands to the nearby higher-order Voronoi cells until we find a cell that classifies differently from the input point. To scale the algorithm to a large $k$, we introduce approximation steps that find perturbation with smaller norm, compared to the baselines, in a variety of datasets. Furthermore, we analyze the structural properties of a dataset where our approach outperforms the competition.
@@ -8,6 +10,8 @@ Adversarial examples are a widely studied phenomenon in machine learning models.
 
 - `test_script.py`: Main test script with hyperparameters.
 - `lib/geoadex.py`: Main implementation of GeoAdEx.
+- `test_sw.py`: For testing Sitawarin & Wagner [2020].
+- See `yang_et_al` and `wang_et_al` for running experiments with Yang et al. [2019] and Wang et al. [2020], respectively. We modified the source code in these repositories only to add new datasets and to compute confidence intervals with random train/test splits. 
 - Dataset can be downloaded from [link](https://github.com/yangarbiter/adversarial-nonparametrics/tree/master/nnattack/datasets/files) and [link](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass.html).
 
 ## Setup Guide
